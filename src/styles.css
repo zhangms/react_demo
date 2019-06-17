@@ -1,0 +1,66 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+.nav {
+  background: #243038;
+  width: 260px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav .logo {
+  align-items: "center";
+  margin-top: 16px;
+  padding: 8px;
+  box-align: center;
+}
+
+.nav .items {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.nav .items .item {
+  padding: 16px 24px 16px 16px;
+  color: hsla(0, 0%, 100%, 0.65);
+}
+
+.nav .items .item:hover,
+.nav .items .itemsel {
+  color: #ffffff;
+  background: linear-gradient(to right, green, yellow);
+  cursor: pointer;
+}
+
+.nav .items .itemsel {
+  padding: 16px 24px 16px 16px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .titlebar {
+  border-bottom: 1px solid #e8e8e8;
+  text-align: right;
+  padding: 16px;
+}
+
+.content .inner {
+  overflow-y: auto;
+  flex: 1;
+}
